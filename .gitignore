@@ -1,0 +1,68 @@
+# ---- QEMU: only the zunehd overlay is tracked; the full v11.1.3 tree is unpacked here locally
+/qemu/*
+!/qemu/zbuild.sh
+!/qemu/hw/
+/qemu/hw/*
+!/qemu/hw/arm/
+/qemu/hw/arm/*
+!/qemu/hw/arm/zunehd*
+!/qemu/hw/arm/meson.build
+!/qemu/hw/arm/Kconfig
+!/qemu/scripts/
+/qemu/scripts/*
+!/qemu/scripts/symlink-install-tree.py
+
+# ---- firmware and anything derived from it (Microsoft / NVIDIA copyright)
+/ZuneHD_Firmware/
+/extracted/
+/release/firmware/*
+!/release/firmware/PUT_NK_AND_EXT_HERE.txt
+*.nb0
+*.bin.cecomp
+gr3d-trace.bin
+/bse/
+/out/
+
+# ---- device data: only the non-secret captures are tracked
+/device/*
+!/device/dsk1_0000-0031.bin
+!/device/dsk1_65568.bin
+!/device/dsk1_131120.bin
+!/device/dsk1_65576_boot.bin
+!/device/dsk1_131128_boot.bin
+!/device/dsk1_65742_flash_upcase.bin
+!/device/front_6144_16k.bin
+front_PKV_*
+pkv_hdr_plain.bin
+devcert.dat
+/device-dump/
+
+# ---- run outputs
+*.img
+zunehd-*.log
+zunehd-regs.txt
+zunehd-threads.txt
+zunehd-ram.bin
+zunehd-screen.*
+/shots/
+*.ppm
+*.wav
+*.raw
+
+# ---- build outputs and third-party clones
+*.exe
+*.dll
+__pycache__/
+*.pyc
+/ext/
+/release/bin/
+/release/source/
+
+# ---- research work dirs (captures are many GB); scripts live in /research/
+/gui/
+/ape/
+/prof/
+
+# ---- test media
+/Test audio/
+*.mp3

@@ -1,0 +1,1 @@
+Copy NK.bin and EXT.bin from the Zune HD firmware 4.5 (build 114) into this folder, then run setup.ps1 (see README.md).
